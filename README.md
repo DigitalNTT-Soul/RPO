@@ -13,18 +13,20 @@ While my goals as a software engineer developing this software have already been
 
 This software is almost more of a virtual game console/platform than it will be an actual game itself. The only significant differences between RPO and PS5 would be custom hardware and portability.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
+[Here's a link to my Youtube demonstration.](https://youtu.be/kLo1uO4On8M) It includes a demo of the current functionality level of the game as well as a walkthrough of all the code being used so far.
 
-[Software Demo Video](http://youtube.link.goes.here)
+
 
 # Development Environment
 
 At time of writing, the project is built using Python 3.10.9 in addition to Kivy 2.1.0, and the only tool used in its development (up until the end of the desktop-only phase of development, at least) was Visual Studio Code
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.goes.here)
-* [Web Site Name](http://url.goes.here)
+A list of websites that I found helpful in this project:
+* [Kivy Documentation Pages](https://kivy.org/doc/stable/)
+* [Stack Overflow](https://stackoverflow.com/) where many of my questions had already been asked and answered for the public to see.
+* [Beginner youtube series on Kivy, by Tech With Tim](https://youtube.com/playlist?list=PLzMcBGfZo4-kSJVMyYeOQ8CXJ3z1k7gHn)
+* [Beginner youtube series on Kivy, by Codemy.com](https://youtube.com/playlist?list=PLCC34OHNcOtpz7PJQ7Tv7hqFBP_xDDjqg)
 
 # Future Work
 

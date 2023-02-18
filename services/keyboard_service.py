@@ -34,7 +34,7 @@ class KeyboardService(Widget):
         #   if it is, then call the function stored as the value of that key-value pair
         if keycode[1] in self._keybinds.keys():
             self._keybinds[keycode[1]]()
-            return True
+            # return True
 
     def _on_key_up(self, keyboard, keycode):
         # May one day do something. Until then, stubbed
