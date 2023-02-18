@@ -10,6 +10,7 @@ While my goals as a software engineer developing this software have already been
 * having its own storefront,
 * where users can download games and other game-like software,
 * each of which specifically utilizes the app's specific UI layout,
+
 This software is almost more of a virtual game console/platform than it will be an actual game itself. The only significant differences between RPO and PS5 would be custom hardware and portability.
 
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
