@@ -1,0 +1,2 @@
+class NeverSweatJunctionModule:
+    pass

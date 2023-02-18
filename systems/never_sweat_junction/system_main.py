@@ -1,0 +1,2 @@
+class NeverSweatJunctionSystem:
+    pass
