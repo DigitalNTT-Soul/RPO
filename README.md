@@ -15,7 +15,7 @@ This software will be almost more of a virtual game console/platform than it wil
 Here's a list of links to my Youtube demonstrations about the various projects
 [First Youtube demonstration](https://youtu.be/kLo1uO4On8M) It includes a quick demo of the functionality at the *very* early, PC-Only phase of development, as well as a quick walkthrough of the code being used up to that point.
 
-[Second Youtube demonstration]() This is a demo of a *barely* better version of the software, with click/touch support and a equally functional (or *dis-functional*) .apk port.
+[Second Youtube demonstration](https://youtu.be/N236vxlm350) This is a demo of a *barely* better version of the software, with click/touch support and a equally functional (or *dis-functional*) .apk port.
 
 # Development Environment
 

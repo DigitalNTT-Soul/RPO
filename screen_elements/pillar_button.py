@@ -30,9 +30,9 @@ class PillarButton(Button):
 
         # Mark the button as no longer being touched because it's been released
         self.touched = False
+        # activate on release, but only if mouse/touch hasn't moved much 
         if (abs(touch.ox - touch.x) <= 25 and
             abs(touch.oy - touch.y) <= 25):
-            # activate on release, but only if mouse/touch hasn't moved much
             self.activate()
 
         # Fire default behavior in addition to any/all overriden behavior
