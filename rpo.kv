@@ -58,15 +58,15 @@
         # FloatLayout widget that will contain the main screen itself.
         #   Pillar buttons are the equivalent to a video game controller
         #   While main_screen is (or will be) equivalent to the TV screen the game is played on
-        FloatLayout:
+        MainScreen:
             id: main_screen
             # Simple Test image displayed just so I can move it around for the time being
             #   and practice both keybinds and motion control
-            Image:
+            ModuleImage:
                 id: testImage
                 # take up half of each dimension *relative to the main_screen parent widget* not to the window itself
                 size_hint: .5, .5
                 # Position "hint" makes initial placement of widget, relative to main_screen, incredibly easy
                 #   With the side effect of making the object immobile until the pos_hint is cleared *after* widget is first displayed
                 pos_hint: {"center_x":.5,"center_y":.5}
-                source: "./modules/never_sweat_junction/assets/images/NeverSweat Junction Logo 8k.png"
+                source: "./modules/never_sweat_junction/assets/images/The Wagon 1080p.png"

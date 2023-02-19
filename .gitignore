@@ -2,6 +2,3 @@
 experiment.*
 design.txt
 .buildozer/*
-# buildozer.spec
-# android.txt
-# android_build.sh
