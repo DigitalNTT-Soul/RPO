@@ -1,0 +1,4 @@
+*.pyc
+experiment.*
+design.txt
+.buildozer/*

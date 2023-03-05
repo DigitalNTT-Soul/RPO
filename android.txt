@@ -1,3 +1,0 @@
-title=Role Play Omniverse
-author=Dylan Ruppell
-orientation=landscape
