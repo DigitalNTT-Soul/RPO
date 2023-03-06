@@ -1,1 +1,0 @@
-# display the logo in center screen

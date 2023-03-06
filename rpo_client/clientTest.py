@@ -23,7 +23,7 @@ def prompt_for_package_code():
 def parse_package_code_for_destination(package_code):
 
     # start building a relative address to the destination of the package
-    package_destination = "rpo_client/"
+    package_destination = "rpo_client/content/"
 
     # content folder is based on the first-character flag of the package_code
     match package_code[0]:
