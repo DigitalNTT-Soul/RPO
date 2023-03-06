@@ -5,7 +5,7 @@ from zipfile import ZipFile
 
 def prompt_for_package_code():
     # prompt user for package code
-    package_code = input("Package code: ")
+    package_code = input("Package code (e.g. 'm00000001'): ")
 
     # regex pattern of how package_codes are supposed to be formatted
     #   note that the package_code is an ASCII character prefixing a hexadecimal number
