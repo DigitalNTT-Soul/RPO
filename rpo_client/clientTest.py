@@ -9,7 +9,7 @@ def prompt_for_package_code():
 
     # regex pattern of how package_codes are supposed to be formatted
     #   note that the package_code is an ASCII character prefixing a hexadecimal number
-    code_pattern = "^[mde][0-9A-Fa-f]{8}$"
+    code_pattern = "^[mse][0-9A-Fa-f]{8}$"
 
     # compare package_code to code_pattern and make sure it matches
     if re.search(code_pattern, package_code) == None:
