@@ -10,12 +10,22 @@ While my goals as a software engineer developing this software have already been
 * where users can download games and other game-like software,
 * each of which specifically utilizes the app's specific controls and framework,
 
-This software will be almost more of a virtual game console/platform than it will be an actual game itself. The only significant differences between RPO and a PS5 would be portability and custom hardware
+This software will be almost more of a virtual game console/platform than it will be an actual game itself. The only significant differences between RPO and a PS5 would be portability and custom hardware.
 
-Here's a list of links to my Youtube demonstrations about the various projects
+First networking update: Networking features can be tested by running the 'rpo_server/server.py' file and then the 'rpo_client/clientTest.py' file, in that order. It is currently only a TCP approximation of a file transfer interaction, with a bit of defined client/server communication syntax thrown in for good measure and future feature addition, which currently allows the client to indicate that it is requesting a download, and indicate which file it is trying to receive.
+
+Here's a list of links to my Youtube demonstrations about the various early phases of the project:
 [First Youtube demonstration](https://youtu.be/kLo1uO4On8M) It includes a quick demo of the functionality at the *very* early, PC-Only phase of development, as well as a quick walkthrough of the code being used up to that point.
 
 [Second Youtube demonstration](https://youtu.be/N236vxlm350) This is a demo of a *barely* better version of the software, with click/touch support and a equally functional (or *dis-functional*) .apk port.
+
+[Third Youtube demonstration]() This is a demo of some early networking features. Since one of the server's many responsibilities is going to be distribution of modules, systems, and expansions, I figured that would be the first thing I designed. The client-side networking features have not yet been implemented into the actual RPO app interface yet, but that (alongside some bug fixes and safety/sanity checks in the netcode) is the next step in the development process.
+
+# Network Communication
+
+The networking portions of this project are in a purely client/server relationship, and using a TCP connection over port 4606. This port was not chosen for any technical reason. It's more like an encoded acronym. If you map the (capital-only) English alphabet to Hexadecimal, with 'A' mapping to 0x0, 'P' mapping to 0xF, and 'Q' mapping to 0x10, then 'RPO' would be 0x11FE, which is 4606 in decimal.
+
+The message format between client and server depends on which task is occurring at that time. The currently-built netcode defines a default syntax with which the client can send requests to the server (comma-separated keywords/arguments), as well as a rudimentary method of mimicking FTP via TCP, in which several back-to-back messages are sent from server to client, containing the raw binary of a requested package, to be reassembled into a zip file on the client side and then extracted.
 
 # Development Environment
 
@@ -36,3 +46,8 @@ A list of things that I plan to fix, improve, and add in the future:
 * Known bug: Pillar buttons do not un-highlight after being tapped or clicked.
 * Pillar Buttons should create and slide-down Sub-Buttons of similar design, but with different labels, and tied to various actions.
     * Sub-buttons are tied to dictionary entries where the key stores the label button and the value stores the actual function the button represents
+* Numerous stability improvements and bugfixes to netcode, especially:
+    * Make sure that if client and server are run from different machines, client receives full package file and does not prematurely cut connection, causing server to crash
+    * Make the server checks for file existence before attempting to open
+        * also make sure the client awaits and properly handles this confirmation instead of automatically diving into package reception mode.
+    * Handle the possibility of a failed connection between client and server
