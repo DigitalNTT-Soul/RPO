@@ -20,7 +20,7 @@ Here's a list of links to my Youtube demonstrations about the various early phas
 
 [Second Youtube demonstration](https://youtu.be/N236vxlm350) This is a demo of a *barely* better version of the software, with click/touch support and a equally functional (or *dis-functional*) .apk port.
 
-[Third Youtube demonstration]() This is a demo of some early networking features. Since one of the server's many responsibilities is going to be distribution of modules, systems, and expansions, I figured that would be the first thing I designed. The client-side networking features have not yet been implemented into the actual RPO app interface yet, but that (alongside some bug fixes and safety/sanity checks in the netcode) is the next step in the development process.
+[Third Youtube demonstration](https://youtu.be/nVaRtjcoEnE) This is a demo of some early networking features. Since one of the server's many responsibilities is going to be distribution of modules, systems, and expansions, I figured that would be the first thing I designed. The client-side networking features have not yet been implemented into the actual RPO app interface yet, but that (alongside some bug fixes and safety/sanity checks in the netcode) is the next step in the development process.
 
 # Network Communication
 

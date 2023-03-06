@@ -32,11 +32,11 @@ def send_content(client, address, full_message):
     # open the file as 'read binary' to send it to client
     #   TODO: make sure it exists before trying to read it
     with open(file_path, 'rb') as buffer:
-        # packet counte
+        # packet counter
         i = 0
         while True:
             # packet count display
-            print(f"Sending chunk {i} of file {file_name} to {client}")
+            print(f"Sending chunk {i} of file {file_name} to {address}")
             i += 1
 
             # read a chunk from the file

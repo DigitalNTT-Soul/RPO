@@ -1,5 +1,5 @@
 import socket
-from server_behaviors.send_module import send_content
+from server_behaviors.send_package import send_content
 
 # define and assemble ip and port for socket creation and binding
 ip = "127.0.0.1"
@@ -19,6 +19,7 @@ server.listen(1)
 while True:
     # accept the connection from the client
     client, address = server.accept()
+    print(f"Connection received from client at {address}")
 
     # receive message from client (requesting the file)
     full_message = client.recv(1024)
