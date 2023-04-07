@@ -22,6 +22,8 @@ Here's a list of links to my Youtube demonstrations about the various early phas
 
 [Third Youtube demonstration](https://youtu.be/nVaRtjcoEnE) This is a demo of some early networking features. Since one of the server's many responsibilities is going to be distribution of modules, systems, and expansions, I figured that would be the first thing I designed. The client-side networking features have not yet been implemented into the actual RPO app interface yet, but that (alongside some bug fixes and safety/sanity checks in the netcode) is the next step in the development process.
 
+[Fourth Youtube demonstration](https://youtu.be/eLVKzVeVAfM) This is a demo of a much more robust, functional, and bug-free version of the netcode from the previous project. Many companies take years to write even halfway decent netcode, so I fully expect mine to still be bad and for me to need to provide substantial further updates to it in the future.
+
 # Network Communication
 
 The networking portions of this project are in a purely client/server relationship, and using a TCP connection over port 4606. This port was not chosen for any technical reason. It's more like an encoded acronym. If you map the (capital-only) English alphabet to Hexadecimal, with 'A' mapping to 0x0, 'P' mapping to 0xF, and 'Q' mapping to 0x10, then 'RPO' would be 0x11FE, which is 4606 in decimal.
@@ -47,8 +49,3 @@ A list of things that I plan to fix, improve, and add in the future:
 * Known bug: Pillar buttons do not un-highlight after being tapped or clicked.
 * Pillar Buttons should create and slide-down Sub-Buttons of similar design, but with different labels, and tied to various actions.
     * Sub-buttons are tied to dictionary entries where the key stores the label button and the value stores the actual function the button represents
-* Numerous stability improvements and bugfixes to netcode, especially:
-    * Make sure that if client and server are run from different machines, client receives full package file and does not prematurely cut connection, causing server to crash
-    * Make the server checks for file existence before attempting to open
-        * also make sure the client awaits and properly handles this confirmation instead of automatically diving into package reception mode.
-    * Handle the possibility of a failed connection between client and server
